@@ -34,3 +34,7 @@ msbuild.wrn
 .vs/
 .vs
 .vscode
+obj
+bin
+obj
+bin
