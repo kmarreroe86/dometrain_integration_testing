@@ -1,0 +1,35 @@
+Current lesson: https://app.dometrain.com/courses/1791306/lectures/40455730
+
+-In Unedited API/Customer.Api/
+    dotnet dev-certs https -ep cert.pfx -p Test1234!
+
+
+
+PgAdmin pass:
+pass123
+
+Add migrations:
+dotnet ef migrations add "Migration_Name"
+
+Apply Migration:
+dotnet ef database update "Migration_Name"
+
+
+appsettings:
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "NZWalksConnectionString": "User ID=postgres;Password=password;Server=localhost;Port=5432;Database=NZWalksDb;Integrated Security=true;Pooling=true;"
+  },
+  "Jwt": {
+    "Key": "supersecretkeyfortesting123jakunamatata885432104977",
+    "Issuer": "http://localhost:5020",
+    "Audience": "http://localhost:5020"
+  }
+}
