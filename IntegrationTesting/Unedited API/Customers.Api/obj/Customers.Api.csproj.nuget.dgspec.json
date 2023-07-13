@@ -1,29 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "J:\\dotnet\\testing\\dometrain\\integration_testing\\IntegrationTesting\\Unedited API\\Customers.Api\\Customers.Api.csproj": {}
+    "/Users/kmarrero/Documents/study/dotnet/dometrain/integration_testing/dometrain_integration_testing/IntegrationTesting/Unedited API/Customers.Api/Customers.Api.csproj": {}
   },
   "projects": {
-    "J:\\dotnet\\testing\\dometrain\\integration_testing\\IntegrationTesting\\Unedited API\\Customers.Api\\Customers.Api.csproj": {
+    "/Users/kmarrero/Documents/study/dotnet/dometrain/integration_testing/dometrain_integration_testing/IntegrationTesting/Unedited API/Customers.Api/Customers.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\dotnet\\testing\\dometrain\\integration_testing\\IntegrationTesting\\Unedited API\\Customers.Api\\Customers.Api.csproj",
+        "projectUniqueName": "/Users/kmarrero/Documents/study/dotnet/dometrain/integration_testing/dometrain_integration_testing/IntegrationTesting/Unedited API/Customers.Api/Customers.Api.csproj",
         "projectName": "Customers.Api",
-        "projectPath": "J:\\dotnet\\testing\\dometrain\\integration_testing\\IntegrationTesting\\Unedited API\\Customers.Api\\Customers.Api.csproj",
-        "packagesPath": "C:\\Users\\kmarrero\\.nuget\\packages\\",
-        "outputPath": "J:\\dotnet\\testing\\dometrain\\integration_testing\\IntegrationTesting\\Unedited API\\Customers.Api\\obj\\",
+        "projectPath": "/Users/kmarrero/Documents/study/dotnet/dometrain/integration_testing/dometrain_integration_testing/IntegrationTesting/Unedited API/Customers.Api/Customers.Api.csproj",
+        "packagesPath": "/Users/kmarrero/.nuget/packages/",
+        "outputPath": "/Users/kmarrero/Documents/study/dotnet/dometrain/integration_testing/dometrain_integration_testing/IntegrationTesting/Unedited API/Customers.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kmarrero\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/kmarrero/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-          "J:\\dotnet\\dotnet5api\\microservices\\source\\packages": {},
+          "/Users/kmarrero/Documents/study/dotnet/csharp-microservices/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

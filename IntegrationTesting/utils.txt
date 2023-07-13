@@ -1,4 +1,5 @@
 Current lesson: https://app.dometrain.com/courses/1791306/lectures/40455730
+https://dometrain.com/
 
 -In Unedited API/Customer.Api/
     dotnet dev-certs https -ep cert.pfx -p Test1234!
