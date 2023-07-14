@@ -1,4 +1,7 @@
-Current lesson: https://app.dometrain.com/courses/1791306/lectures/40455730
+Current lesson:
+The problem with third party API dependencies
+https://app.dometrain.com/courses/1791306/lectures/40457188
+
 https://dometrain.com/
 
 -In Unedited API/Customer.Api/
