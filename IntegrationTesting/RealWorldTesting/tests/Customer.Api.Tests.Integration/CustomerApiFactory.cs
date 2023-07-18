@@ -21,6 +21,7 @@ namespace Customer.Api.Tests.Integration
     {
 
         public const string ValidGithubUser = "validuser";
+        public const string ThrottledUser = "throttle";
 
         private readonly PostgreSqlContainer _dbContainer = new PostgreSqlBuilder()
             .WithImage("postgres:alpine")
@@ -63,6 +64,7 @@ namespace Customer.Api.Tests.Integration
         {
             _gitHubApiServer.Start();
             _gitHubApiServer.SetUpUser(ValidGithubUser);
+            _gitHubApiServer.SetupThrottledUser(ThrottledUser);
             await _dbContainer.StartAsync();
         }
 

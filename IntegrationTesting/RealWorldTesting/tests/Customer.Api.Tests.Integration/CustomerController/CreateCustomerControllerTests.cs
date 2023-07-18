@@ -1,18 +1,10 @@
 ﻿using Bogus;
-using Customers.Api;
 using Customers.Api.Contracts.Requests;
 using Customers.Api.Contracts.Responses;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Testing;
-using SharpYaml;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Customer.Api.Tests.Integration.CustomerController
@@ -32,7 +24,6 @@ namespace Customer.Api.Tests.Integration.CustomerController
 
         public CreateCustomerControllerTests(CustomerApiFactory apiFactory)
         {
-            // _apiFactory = apiFactory;
             _client = apiFactory.CreateClient();
         }
 
@@ -97,6 +88,21 @@ namespace Customer.Api.Tests.Integration.CustomerController
             error!.Status.Should().Be(400);
             error.Title.Should().Be("One or more validation errors occurred.");
             error.Errors["GitHubUsername"][0].Should().Be($"There is no GitHub user with username {invalidUser}");
+        }
+
+        [Fact]
+        public async Task Create_ReturnsInternalServerError_WhenGithubIsThrottled()
+        {
+            // Arrange
+            var customer = _customerGenerator.Clone()
+                .RuleFor(x => x.GitHubUsername, CustomerApiFactory.ThrottledUser)
+                .Generate();
+
+            // Act
+            var response = await _client.PostAsJsonAsync("customers", customer);
+
+            // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.InternalServerError);
         }
     }
 }
